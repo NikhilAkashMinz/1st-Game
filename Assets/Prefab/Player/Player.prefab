@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 2630190102087007660}
   - component: {fileID: 4229888073360941186}
   - component: {fileID: 1337065520847319137}
+  - component: {fileID: 6659251633388713446}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -170,6 +171,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -191,6 +194,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1809325415
   m_SortingLayer: 3
   m_SortingOrder: 0
@@ -604,6 +608,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisAbilityState: 10
   isPermitted: 1
+--- !u!114 &6659251633388713446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3378136835955581233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eddfcd9d1ae18a54d9de6988ca7de844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivateCheckPoint
+  AtivateCheck: {fileID: 6418231826187899120, guid: 4ee20fbca81b7c24cbf8ca8052c9594b, type: 3}
+  checkPoint: {fileID: 0}
 --- !u!1 &4475462392175277723
 GameObject:
   m_ObjectHideFlags: 0
