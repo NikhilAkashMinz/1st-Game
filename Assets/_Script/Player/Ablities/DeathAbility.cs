@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.IO;
 
 public class DeathAbility : BaseAbility
 {
@@ -21,8 +22,18 @@ public class DeathAbility : BaseAbility
 
     public void ResetGame()
     {
-        Debug.Log("Reset Game");
-        LevelManager.instance.RestartLevel();
+        string loadPath = Path.Combine(Application.persistentDataPath, SaveLoadManager.Instance.folderName, SaveLoadManager.Instance.fileCheckPoint);
+
+        if (File.Exists(loadPath))
+        {
+            CheckpointData checkData = new CheckpointData();
+            SaveLoadManager.Instance.Load(checkData, SaveLoadManager.Instance.folderName, SaveLoadManager.Instance.fileCheckPoint);
+            LevelManager.instance.LoadLevelString(checkData.sceneToLoad);
+        }
+        else
+        {
+            LevelManager.instance.RestartLevel();
+        }
 
     }
     
