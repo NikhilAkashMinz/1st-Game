@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelToLoad: Level 2
   spawnDataForOtherLevel:
-    spawnPointKey: 
-    facingRight: 0
+    spawnPointKey: Start
+    facingRight: 1
 --- !u!50 &5500847574112830994
 Rigidbody2D:
   serializedVersion: 5

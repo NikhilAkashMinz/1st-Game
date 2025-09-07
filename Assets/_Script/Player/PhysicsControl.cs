@@ -35,6 +35,10 @@ public class PhysicsControl : MonoBehaviour
     private RaycastHit2D hitInfoCellingL;
     private RaycastHit2D hitInfoCellingR;
 
+    [Header("Interpolation")]
+    public RigidbodyInterpolation2D interpolate;
+    public RigidbodyInterpolation2D extrapolate;
+
 
 
     [Header("Coyote Time")]
@@ -53,14 +57,14 @@ public class PhysicsControl : MonoBehaviour
     {
         Debug.DrawRay(cellingCheckPointL.position, new Vector3(0, cellingRayDistance, 0));
         Debug.DrawRay(cellingCheckPointR.position, new Vector3(0, cellingRayDistance, 0));
+        Debug.DrawRay(leftGroundPoint.position, new Vector3(0, -groundCheckDistance, 0), Color.red);
+        Debug.DrawRay(rightGroundPoint.position, new Vector3(0, -groundCheckDistance, 0), Color.red);
     }
     private bool CheckGround()
     {
         hitInfoLeft = Physics2D.Raycast(leftGroundPoint.position, Vector2.down, groundCheckDistance, whatToDetect);
         hitInfoRight = Physics2D.Raycast(rightGroundPoint.position, Vector2.down, groundCheckDistance, whatToDetect);
 
-        Debug.DrawRay(leftGroundPoint.position, new Vector3(0, -groundCheckDistance, 0), Color.red);
-        Debug.DrawRay(rightGroundPoint.position, new Vector3(0, -groundCheckDistance, 0), Color.red);
 
         if (hitInfoLeft || hitInfoRight) return true;
 
@@ -89,6 +93,15 @@ public class PhysicsControl : MonoBehaviour
         if (hitInfoCellingL || hitInfoCellingR) return true;
 
         return false;
+    }
+
+    public void SetInterpolate()
+    {
+        rb.interpolation = interpolate;
+    }
+    public void SetExtrapolate()
+    {
+        rb.interpolation = extrapolate;
     }
 
     public void DisableGravity()

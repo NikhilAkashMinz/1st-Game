@@ -428,6 +428,8 @@ MonoBehaviour:
   cellingCheckPointL: {fileID: 8084240504082128218}
   cellingCheckPointR: {fileID: 1136039988377956845}
   cellingDetected: 0
+  interpolate: 1
+  extrapolate: 2
   coyoteSetTime: 0.09
   coyoteTimer: 0
 --- !u!114 &4842495630013805626

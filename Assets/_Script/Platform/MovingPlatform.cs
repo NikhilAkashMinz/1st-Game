@@ -8,6 +8,7 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private Transform[] points;
     private int targetIndex;
 
+    private Player player;
 
 
     void Start()
@@ -26,6 +27,41 @@ public class MovingPlatform : MonoBehaviour
             {
                 targetIndex = 0;
             }
-        }        
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            foreach(ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y <= -0.5f)
+                {
+                    collision.transform.SetParent(this.transform);
+                    player = collision.gameObject.GetComponent<Player>();
+                    player.physicsControl.SetExtrapolate();
+                    break;
+                }
+            }
+
+            
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (gameObject.activeInHierarchy == true)
+            {
+                collision.transform.SetParent(null);
+                if (player != null)
+                {
+                    player.physicsControl.SetInterpolate();
+                }
+                player = null;
+            }
+        }
     }
 }

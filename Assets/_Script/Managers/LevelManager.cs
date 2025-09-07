@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private float fadeDuration;
     private CanvasGroup canvasGroup;
 
+
     private void Awake()
     {
         instance = this;
