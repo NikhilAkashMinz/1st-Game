@@ -542,7 +542,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5.625
+  orthographic size: 5.3854165
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -567,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9155369, y: -1.1099985, z: -10}
+  m_LocalPosition: {x: -2.3358707, y: -1.1099985, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1338,6 +1338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid - Minimap1
       objectReference: {fileID: 0}
+    - target: {fileID: 6977928694625588330, guid: 249fecd3cc039f94c98ec0207aa8e3ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1359,7 +1363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &764969030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21367,7 +21371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7645804747297791168, guid: a94d5a24030c48b49b361b3ba9f669b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8641814560928477435, guid: a94d5a24030c48b49b361b3ba9f669b9, type: 3}
       propertyPath: blackScreen
@@ -21433,6 +21437,10 @@ PrefabInstance:
     - target: {fileID: 2263520725557950084, guid: d836552a1f9d4e14bacd11bb9725eadf, type: 3}
       propertyPath: m_Name
       value: Camera - MiniMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 2263520725557950084, guid: d836552a1f9d4e14bacd11bb9725eadf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21853,6 +21861,10 @@ PrefabInstance:
     - target: {fileID: 8615042097516300613, guid: 185dd386dfe952949ad6dfa8568704aa, type: 3}
       propertyPath: m_Name
       value: Canvas-MiniMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615042097516300613, guid: 185dd386dfe952949ad6dfa8568704aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
