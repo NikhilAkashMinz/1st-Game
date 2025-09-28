@@ -98,12 +98,18 @@ public class Shooting : MonoBehaviour
 
   private IEnumerator ResetShootLine()
   {
+    //isShootingLineActivate = true;
     yield return new WaitForSeconds(currentWeapon.visibleLineTime);
     lineRenderer.positionCount = 0;
+    //isShootingLineActivate = false;
   }
 
   void Update()
   {
-
+    if(isShootingLineActivate)
+    {
+      // lineRenderer.SetPosition(0,currentWeapon.shootingPoint.position);
+      // lineRenderer.SetPosition(1,endPoint);
+    }
   }
 }
