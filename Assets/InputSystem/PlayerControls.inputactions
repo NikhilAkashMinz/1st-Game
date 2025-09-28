@@ -426,7 +426,7 @@
                 {
                     "name": "",
                     "id": "fcdd6a52-8468-4140-bfb6-a0ad4916b4d5",
-                    "path": "<Keyboard>/9",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";KeyBoard",

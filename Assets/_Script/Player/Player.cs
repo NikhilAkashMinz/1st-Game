@@ -7,9 +7,18 @@ public class Player : MonoBehaviour
     public PhysicsControl physicsControl;
     public PlayerStats playerStats;
     public Animator anim;
-    public bool isFacingRight = true;
-    private BaseAbility[] playerAbilities;
 
+
+    private BaseAbility[] playerAbilities;
+    public bool isFacingRight = true;
+
+
+    [Header("Current Weapon")]
+    public GameObject currentWeaponPrefab;
+    public ItemType currentWeaponType;
+
+    [Header("Primay Weapon")]
+    public GameObject primaryWeaponPrefab;
 
     private void Awake()
     {
@@ -28,7 +37,7 @@ public class Player : MonoBehaviour
             }
             ability.UpdateAnimator();
         }
-        Debug.Log($"Current State: {stateMachine.currentState}");
+       // Debug.Log($"Current State: {stateMachine.currentState}");
     }
 
     private void FixedUpdate()

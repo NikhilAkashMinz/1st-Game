@@ -42,8 +42,8 @@ public class GatherInput : MonoBehaviour
         verticalInput = verticialActionRef.action.ReadValue<float>();
 
         // Debugging the inputs
-        Debug.Log("Vertical Input: " + verticalInput);
-        Debug.Log("Horizontal Input: " + horizontalInput);
+//        Debug.Log("Vertical Input: " + verticalInput);
+       // Debug.Log("Horizontal Input: " + horizontalInput);
     }
     public void DisablePlayerMap()
     {
