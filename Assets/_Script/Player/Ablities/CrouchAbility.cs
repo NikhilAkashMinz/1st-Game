@@ -35,6 +35,7 @@ public class CrouchAbility : BaseAbility
     {
         linkedPhysics.CrouchCollider();
         player.playerStats.EnableStatsCrouchCol();
+        player.SetCrouchShootPos();
     }
 
     public override void ExitAbility()
@@ -42,13 +43,16 @@ public class CrouchAbility : BaseAbility
         wanttoStop = false;
         linkedPhysics.StandCollider();
         player.playerStats.EnableStatsStandCol();
+        player.SetStandShootPos();
     }
 
     private void TryToCrouch(InputAction.CallbackContext value)
     {
         if (!isPermitted || linkedStateMachine.currentState == PlayerState.State.Knockback ) return;
 
-        if (linkedPhysics.grounded == false || linkedStateMachine.currentState == PlayerState.State.Dash || linkedStateMachine.currentState == PlayerState.State.Ladder) return;
+        if (linkedPhysics.grounded == false || linkedStateMachine.currentState == PlayerState.State.Dash 
+        || linkedStateMachine.currentState == PlayerState.State.Ladder
+        || linkedStateMachine.currentState == PlayerState.State.Reload) return;
 
         wanttoStop = false;
         linkedStateMachine.ChangeState(PlayerState.State.Crouch);

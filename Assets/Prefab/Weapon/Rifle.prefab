@@ -105,17 +105,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50353ac8cb3560c4ea903f90f8406f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  ID: 
+  ID: Rifle
   ItemType: 0
   damage: 10
-  shootingCoolDown: 2
-  isAutomatic: 0
-  currentAmmo: 31
+  shootCooldown: 0.1
+  isAutomatic: 1
+  currentAmmo: 1000
   maxAmmo: 31
   storageAmmo: 60
   shootingPoint: {fileID: 6662439431443182019}
   shellSpawnPoint: {fileID: 8136155127149080012}
   shellPrefab: {fileID: 0}
+  weaponIconSprite: {fileID: 927205807, guid: d9962d0c665e26a46bd1c6f8743fd809, type: 3}
+  visibleLineTime: 0.03
 --- !u!1 &5704044255782614995
 GameObject:
   m_ObjectHideFlags: 0

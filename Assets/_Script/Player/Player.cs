@@ -20,11 +20,17 @@ public class Player : MonoBehaviour
     [Header("Primay Weapon")]
     public GameObject primaryWeaponPrefab;
 
+    [Header("Weapon Position")]
+    [SerializeField] private Transform currentShootingPos;
+    [SerializeField] private Transform standingShootPos;
+    [SerializeField] private Transform crouchShootPos;
+
     private void Awake()
     {
         stateMachine = new StateMachine();
         playerAbilities = GetComponents<BaseAbility>();
         stateMachine.arrayOfAbilities = playerAbilities;
+        currentShootingPos = standingShootPos;
     }
 
     private void Update()
@@ -70,4 +76,33 @@ public class Player : MonoBehaviour
         isFacingRight = !isFacingRight;
 
     }
+
+    public void SetStandShootPos()
+    {
+        if(currentWeaponType == ItemType.PrimaryWeapon)
+        {
+            currentShootingPos = standingShootPos;
+            currentWeaponPrefab.transform.position = standingShootPos.position;
+        }
+    }
+
+    public void SetCrouchShootPos()
+    {
+        if(currentWeaponType == ItemType.PrimaryWeapon)
+        {
+            currentShootingPos = crouchShootPos;
+            currentWeaponPrefab.transform.position = crouchShootPos.position;
+        }
+    }
+
+    public void DeactivateCurrentWeapon()
+    {
+        currentWeaponPrefab.SetActive(false);
+    }
+
+    public void ActivateCurrentWeapon()
+    {
+        currentWeaponPrefab.SetActive(true);
+    }
+
 }

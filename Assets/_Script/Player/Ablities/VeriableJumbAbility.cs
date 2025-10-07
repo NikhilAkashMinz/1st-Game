@@ -86,7 +86,8 @@ public class VeriableJumbAbility : BaseAbility
 
     private void TryToJump(InputAction.CallbackContext value)
     {
-        if (!isPermitted || linkedStateMachine.currentState == PlayerState.State.Knockback ) return;
+        if (!isPermitted || linkedStateMachine.currentState == PlayerState.State.Knockback
+        || linkedStateMachine.currentState == PlayerState.State.Reload ) return;
         // Check if the player is on a ladder
         if (linkedStateMachine.currentState == PlayerState.State.Ladder)
         {

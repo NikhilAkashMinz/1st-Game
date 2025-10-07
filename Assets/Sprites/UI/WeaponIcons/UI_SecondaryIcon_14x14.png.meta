@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,20 +151,20 @@ TextureImporter:
       name: UI_SecondaryIcon_14x14_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 3
-        width: 12
-        height: 7
+        x: 2
+        y: 4
+        width: 10
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e970c7c58fe6656e0800000000000000
-      internalID: -1849168584006432866
+      spriteID: 8e38b078d4da0e044bef593a965f4fd2
+      internalID: -163569768
       vertices: []
       indices: 
       edges: []
@@ -173,20 +173,20 @@ TextureImporter:
       name: UI_SecondaryIcon_14x14_1
       rect:
         serializedVersion: 2
-        x: 15
-        y: 3
-        width: 11
-        height: 7
+        x: 16
+        y: 4
+        width: 9
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 72e92a8c7831e5c50800000000000000
-      internalID: 6655778773207784999
+      spriteID: 36151cae7d98a844aa18a5047446f22c
+      internalID: -477883851
       vertices: []
       indices: 
       edges: []
@@ -195,20 +195,20 @@ TextureImporter:
       name: UI_SecondaryIcon_14x14_2
       rect:
         serializedVersion: 2
-        x: 30
-        y: 4
-        width: 10
-        height: 6
+        x: 31
+        y: 5
+        width: 8
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: de72429d600558730800000000000000
-      internalID: 4000691834331604973
+      spriteID: 9161364f2371d9144b04a62676de7a6c
+      internalID: 1865665364
       vertices: []
       indices: 
       edges: []
@@ -217,20 +217,20 @@ TextureImporter:
       name: UI_SecondaryIcon_14x14_3
       rect:
         serializedVersion: 2
-        x: 44
-        y: 3
-        width: 10
-        height: 7
+        x: 45
+        y: 4
+        width: 8
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5f66f3030d7defe10800000000000000
-      internalID: 2233459754384975605
+      spriteID: 51f737b0b9f7d01408a6b2cba85477d9
+      internalID: -1387743856
       vertices: []
       indices: 
       edges: []
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7bf38f75dd668aa48ae7387758d37713
     internalID: 0
     vertices: []
     indices: 
@@ -247,12 +247,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      UI_SecondaryIcon_14x14_0: -1849168584006432866
-      UI_SecondaryIcon_14x14_1: 6655778773207784999
-      UI_SecondaryIcon_14x14_2: 4000691834331604973
-      UI_SecondaryIcon_14x14_3: 2233459754384975605
+      UI_SecondaryIcon_14x14_0: -163569768
+      UI_SecondaryIcon_14x14_1: -477883851
+      UI_SecondaryIcon_14x14_2: 1865665364
+      UI_SecondaryIcon_14x14_3: -1387743856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

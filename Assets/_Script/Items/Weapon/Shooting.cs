@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 using UnityEngine.InputSystem;
 
 public class Shooting : MonoBehaviour
@@ -15,10 +16,14 @@ public class Shooting : MonoBehaviour
 
   [Header("Raycast")]
   public LayerMask whatToHit;
+  public float shootRange = 20f;
   [SerializeField]private LineRenderer lineRenderer;
   private bool isShootingLineActivate = false;
   private Vector3 startPoint;
   private Vector3 endPoint;
+
+  public static Action<Sprite,int,int,int> OnUpdateAllInfo;
+  public static Action<int,int,int> OnUpdateAmmo;
 
   private void Awake()
   {
@@ -28,6 +33,7 @@ public class Shooting : MonoBehaviour
   void Start()
   {
     currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
+    OnUpdateAllInfo?.Invoke(currentWeapon.weaponIconSprite, currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
   }
   
   private void OnEnable()
@@ -44,14 +50,20 @@ public class Shooting : MonoBehaviour
 
   private void TryToShoot(InputAction.CallbackContext value)
   {
+
     if(currentWeapon == null 
     || player.stateMachine.currentState == PlayerState.State.Ladder 
     || player.stateMachine.currentState == PlayerState.State.Ladder 
     || player.stateMachine.currentState == PlayerState.State.WallSlide
     ||player.stateMachine.currentState == PlayerState.State.Knockback)
-    if(currentWeapon.currentAmmo<=0 || shootButtonHeld || !shootCooldownOver) return;
+    
+    if(shootButtonHeld || !shootCooldownOver) return;
 
-
+    if(currentWeapon.isAutomatic)
+    {
+      shootButtonHeld=true;
+      return;  
+    }
     shootButtonHeld=true;
     Shoot(); 
   }
@@ -63,9 +75,11 @@ public class Shooting : MonoBehaviour
 
   private void Shoot()
   {
+    if(currentWeapon.currentAmmo <= 0  || currentWeapon.isReloading) return;
+    
     lineRenderer.positionCount = 2;
     Vector3 direction = currentWeapon.shootingPoint.right;
-    RaycastHit2D hitInfo = Physics2D.Raycast(currentWeapon.shootingPoint.position, direction, Mathf.Infinity, whatToHit);
+    RaycastHit2D hitInfo = Physics2D.Raycast(currentWeapon.shootingPoint.position, direction, shootRange, whatToHit);
     
     if(hitInfo)
     {
@@ -87,6 +101,7 @@ public class Shooting : MonoBehaviour
     currentWeapon.currentAmmo -= 1;
     StartCoroutine(ShootDelay());
     StartCoroutine(ResetShootLine());
+    OnUpdateAmmo.Invoke(currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
   }
 
   private IEnumerator ShootDelay()
@@ -106,6 +121,11 @@ public class Shooting : MonoBehaviour
 
   void Update()
   {
+    if(shootButtonHeld && currentWeapon.isAutomatic && shootCooldownOver)
+    {
+     
+      Shoot();
+    }
     if(isShootingLineActivate)
     {
       // lineRenderer.SetPosition(0,currentWeapon.shootingPoint.position);

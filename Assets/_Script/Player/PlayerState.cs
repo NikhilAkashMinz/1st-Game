@@ -15,6 +15,7 @@ public class PlayerState
         Ladder,
         Knockback,
         Death,
+        Reload,
         Ignore
     } 
 }

@@ -45,7 +45,9 @@ public class DashAbility : BaseAbility
     {
         if (!isPermitted || linkedStateMachine.currentState == PlayerState.State.Knockback) return;
 
-        if (linkedStateMachine.currentState == PlayerState.State.Dash || linkedPhysics.wallDetected || linkedStateMachine.currentState == PlayerState.State.Crouch) return;
+        if (linkedStateMachine.currentState == PlayerState.State.Dash || linkedPhysics.wallDetected 
+        || linkedStateMachine.currentState == PlayerState.State.Crouch
+        || linkedStateMachine.currentState == PlayerState.State.Reload) return;
 
         linkedStateMachine.ChangeState(PlayerState.State.Dash);
         linkedPhysics.DisableGravity();

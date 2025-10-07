@@ -41,7 +41,10 @@ public class LadderAbility : BaseAbility
         if (!isPermitted || linkedStateMachine.currentState == PlayerState.State.Knockback) return;
         linkedAnimator.enabled = true;
 
-        if (linkedStateMachine.currentState == PlayerState.State.Ladder || linkedStateMachine.currentState == PlayerState.State.Dash || !canGoOnLadder) return;
+        if (linkedStateMachine.currentState == PlayerState.State.Ladder ||
+         linkedStateMachine.currentState == PlayerState.State.Dash 
+         ||linkedStateMachine.currentState == PlayerState.State.Reload
+         || !canGoOnLadder) return;
 
         linkedStateMachine.ChangeState(PlayerState.State.Ladder);
         linkedPhysics.DisableGravity();
