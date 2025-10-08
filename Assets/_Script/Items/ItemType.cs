@@ -3,7 +3,7 @@
 
 public enum ItemType{
     PrimaryWeapon,
-    SecondryWeapon,
+    SecondaryWeapon,
     ModificationItem,
     Consumable,
 }

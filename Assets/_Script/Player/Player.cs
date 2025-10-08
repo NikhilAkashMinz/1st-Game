@@ -20,11 +20,19 @@ public class Player : MonoBehaviour
     [Header("Primay Weapon")]
     public GameObject primaryWeaponPrefab;
 
+    [Header("Secondary Weapon")]
+    public GameObject secondaryWeaponPrefab;
+
     [Header("Weapon Position")]
     [SerializeField] private Transform currentShootingPos;
     [SerializeField] private Transform standingShootPos;
     [SerializeField] private Transform crouchShootPos;
     [SerializeField] private Transform upShootPos;
+
+    [Header("Sceondary Weapon Poaition")]
+    [SerializeField] private Transform secondaryStandingShootPos;
+    [SerializeField] private Transform secondaryCrouchShootPos;
+    [SerializeField] private Transform secondaryUpShootPos;
 
     private void Awake()
     {
@@ -80,30 +88,48 @@ public class Player : MonoBehaviour
 
     public void SetStandShootPos()
     {
-        if(currentWeaponType == ItemType.PrimaryWeapon)
+        if (currentWeaponType == ItemType.PrimaryWeapon)
         {
             currentShootingPos = standingShootPos;
             currentWeaponPrefab.transform.position = standingShootPos.position;
+            SetWeaponRotation(0);
+        }
+        else if(currentWeaponType == ItemType.SecondaryWeapon)
+        {
+            currentShootingPos = secondaryStandingShootPos;
+            currentWeaponPrefab.transform.position = secondaryStandingShootPos.position;
             SetWeaponRotation(0);
         }
     }
 
     public void SetCrouchShootPos()
     {
-        if(currentWeaponType == ItemType.PrimaryWeapon)
+        if (currentWeaponType == ItemType.PrimaryWeapon)
         {
             currentShootingPos = crouchShootPos;
             currentWeaponPrefab.transform.position = crouchShootPos.position;
+            SetWeaponRotation(0);
+        }
+        else if (currentWeaponType == ItemType.SecondaryWeapon)
+        {
+            currentShootingPos = secondaryCrouchShootPos;
+            currentWeaponPrefab.transform.position = secondaryCrouchShootPos.position;
             SetWeaponRotation(0);
         }
     }
 
     public void SetUpShootPos()
     {
-        if(currentWeaponType == ItemType.PrimaryWeapon)
+        if (currentWeaponType == ItemType.PrimaryWeapon)
         {
             currentShootingPos = upShootPos;
             currentWeaponPrefab.transform.position = upShootPos.position;
+            SetWeaponRotation(90);
+        }
+        else if (currentWeaponType == ItemType.SecondaryWeapon)
+        {
+            currentShootingPos = secondaryUpShootPos;
+            currentWeaponPrefab.transform.position = secondaryUpShootPos.position;
             SetWeaponRotation(90);
         }
     }
