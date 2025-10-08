@@ -6,6 +6,7 @@ public class DeathAbility : BaseAbility
 
     public override void EnterAbility()
     {
+        player.DeactivateCurrentWeapon(); 
         SpawnMode.spawnFromCheckpoint = true;
         linkedPhysics.ResetVelocity();
         linkedPhysics.rb.linearVelocity = Vector2.zero;

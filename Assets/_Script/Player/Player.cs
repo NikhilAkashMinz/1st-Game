@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform currentShootingPos;
     [SerializeField] private Transform standingShootPos;
     [SerializeField] private Transform crouchShootPos;
+    [SerializeField] private Transform upShootPos;
 
     private void Awake()
     {
@@ -83,6 +84,7 @@ public class Player : MonoBehaviour
         {
             currentShootingPos = standingShootPos;
             currentWeaponPrefab.transform.position = standingShootPos.position;
+            SetWeaponRotation(0);
         }
     }
 
@@ -92,7 +94,23 @@ public class Player : MonoBehaviour
         {
             currentShootingPos = crouchShootPos;
             currentWeaponPrefab.transform.position = crouchShootPos.position;
+            SetWeaponRotation(0);
         }
+    }
+
+    public void SetUpShootPos()
+    {
+        if(currentWeaponType == ItemType.PrimaryWeapon)
+        {
+            currentShootingPos = upShootPos;
+            currentWeaponPrefab.transform.position = upShootPos.position;
+            SetWeaponRotation(90);
+        }
+    }
+
+    private void SetWeaponRotation(float zRoatation)
+    {
+        currentWeaponPrefab.transform.localEulerAngles = new Vector3(0, 0, zRoatation);
     }
 
     public void DeactivateCurrentWeapon()

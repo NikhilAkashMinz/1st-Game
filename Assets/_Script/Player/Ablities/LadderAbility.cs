@@ -64,8 +64,14 @@ public class LadderAbility : BaseAbility
         linkedPhysics.ResetVelocity();
         linkedAnimator.enabled = false;
     }
+
+    public override void EnterAbility()
+    {
+        player.DeactivateCurrentWeapon();
+    }
     public override void ExitAbility()
     {
+        player.ActivateCurrentWeapon();
         linkedPhysics.EnableGravity();
         linkedAnimator.enabled = true;
         climb = false;
