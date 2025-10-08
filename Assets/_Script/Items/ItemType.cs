@@ -1,9 +1,12 @@
 [System.Serializable]
 
 
-public enum ItemType{
+public enum ItemType
+{
     PrimaryWeapon,
     SecondaryWeapon,
     ModificationItem,
     Consumable,
+    
+    //hghghj
 }
