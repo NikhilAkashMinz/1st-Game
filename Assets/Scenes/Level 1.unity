@@ -22603,6 +22603,10 @@ PrefabInstance:
       propertyPath: secondaryStandingShootPos
       value: 
       objectReference: {fileID: 2024126007}
+    - target: {fileID: 8139618707084663965, guid: fe9decc35dc1a3649a1b9bdc36fe663c, type: 3}
+      propertyPath: changeWeaponRef
+      value: 
+      objectReference: {fileID: 4684828170141563298, guid: 4ee20fbca81b7c24cbf8ca8052c9594b, type: 3}
     - target: {fileID: 9053388572257434578, guid: fe9decc35dc1a3649a1b9bdc36fe663c, type: 3}
       propertyPath: healthBarControl
       value: 

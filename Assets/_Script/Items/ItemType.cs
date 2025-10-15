@@ -8,5 +8,5 @@ public enum ItemType
     ModificationItem,
     Consumable,
     
-    //hghghj
+    //123
 }

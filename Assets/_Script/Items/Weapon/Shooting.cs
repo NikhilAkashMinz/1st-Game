@@ -7,6 +7,7 @@ public class Shooting : MonoBehaviour
 {
   [Header("Reference")]
   public InputActionReference shootActionRef;
+  public InputActionReference changeWeaponRef;
   public Weapon currentWeapon;
   private Player player;
 
@@ -35,37 +36,82 @@ public class Shooting : MonoBehaviour
     currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
     OnUpdateAllInfo?.Invoke(currentWeapon.weaponIconSprite, currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
   }
-  
+
   private void OnEnable()
   {
     shootActionRef.action.performed += TryToShoot;
     shootActionRef.action.canceled += StopShooting;
+    changeWeaponRef.action.performed += TryToChangeWeapon;
   }
 
   private void OnDisable()
   {
     shootActionRef.action.performed -= TryToShoot;
     shootActionRef.action.canceled -= StopShooting;
+    changeWeaponRef.action.performed -= TryToChangeWeapon;
+  }
+
+  private void TryToChangeWeapon(InputAction.CallbackContext value)
+  {
+    if (currentWeapon == null
+    || player.stateMachine.currentState == PlayerState.State.Ladder
+    || player.stateMachine.currentState == PlayerState.State.Ladder
+    || player.stateMachine.currentState == PlayerState.State.WallSlide
+    || player.stateMachine.currentState == PlayerState.State.Knockback) return;
+
+    if (currentWeapon.isReloading) return;
+
+    if (currentWeapon.ItemType == ItemType.PrimaryWeapon)
+    {
+      if (player.secondaryWeaponPrefab == null)
+        return;
+
+      player.primaryWeaponPrefab.SetActive(false);
+      player.secondaryWeaponPrefab.SetActive(true);
+      player.currentWeaponPrefab = player.secondaryWeaponPrefab;
+      currentWeaponType = ItemType.SecondaryWeapon;
+      player.currentWeaponType = currentWeaponType;
+      currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
+      player.anim.SetLayerWeight(1, 1);
+    }
+    else
+    {
+      if (player.primaryWeaponPrefab == null)
+        return;
+
+      player.primaryWeaponPrefab.SetActive(true);
+      player.secondaryWeaponPrefab.SetActive(false);
+      player.currentWeaponPrefab = player.primaryWeaponPrefab;
+      currentWeaponType = ItemType.PrimaryWeapon;
+      player.currentWeaponType = currentWeaponType;
+      currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
+      player.anim.SetLayerWeight(1, 0);
+    }
+  }
+
+  private void StopChangeWeapon(InputAction.CallbackContext value)
+  {
+    
   }
 
   private void TryToShoot(InputAction.CallbackContext value)
   {
 
-    if(currentWeapon == null 
-    || player.stateMachine.currentState == PlayerState.State.Ladder 
-    || player.stateMachine.currentState == PlayerState.State.Ladder 
+    if (currentWeapon == null
+    || player.stateMachine.currentState == PlayerState.State.Ladder
+    || player.stateMachine.currentState == PlayerState.State.Ladder
     || player.stateMachine.currentState == PlayerState.State.WallSlide
-    ||player.stateMachine.currentState == PlayerState.State.Knockback)
-    
-    if(shootButtonHeld || !shootCooldownOver) return;
+    || player.stateMachine.currentState == PlayerState.State.Knockback) return;
 
-    if(currentWeapon.isAutomatic)
+    if (shootButtonHeld || !shootCooldownOver) return;
+
+    if (currentWeapon.isAutomatic)
     {
-      shootButtonHeld=true;
-      return;  
+      shootButtonHeld = true;
+      return;
     }
-    shootButtonHeld=true;
-    Shoot(); 
+    shootButtonHeld = true;
+    Shoot();
   }
 
   private void StopShooting(InputAction.CallbackContext value)
