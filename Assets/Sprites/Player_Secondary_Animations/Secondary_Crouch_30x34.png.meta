@@ -145,20 +145,20 @@ TextureImporter:
       name: Secondary_Crouch_30x34_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 23
-        height: 24
+        width: 30
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aa8c63054875fbab0800000000000000
-      internalID: -4990173636310153046
+      spriteID: 7657af4081fe51d4b967e7d842ebaf43
+      internalID: -1141052024
       vertices: []
       indices: 
       edges: []
@@ -167,20 +167,20 @@ TextureImporter:
       name: Secondary_Crouch_30x34_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 30
         y: 0
-        width: 23
-        height: 23
+        width: 30
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 81093a40bcc7e23a0800000000000000
-      internalID: -6688271185200574440
+      spriteID: 3170412b0c9a3eb4b96322f75dda761d
+      internalID: 442113989
       vertices: []
       indices: 
       edges: []
@@ -189,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 706ce4e0fe982aa47a1c5c078c16170c
     internalID: 0
     vertices: []
     indices: 
@@ -197,10 +197,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":30.0,"y":34.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Secondary_Crouch_30x34_0: -4990173636310153046
-      Secondary_Crouch_30x34_1: -6688271185200574440
+      Secondary_Crouch_30x34_0: -1141052024
+      Secondary_Crouch_30x34_1: 442113989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

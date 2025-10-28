@@ -90,7 +90,7 @@
                 {
                     "name": "ChangeWeapon",
                     "type": "Value",
-                    "id": "e1733c9e-700a-4ca6-bddd-943a8d746676",
+                    "id": "2ee56868-3fe4-4e27-b35f-6aab686a4bf3",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -528,19 +528,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "dd4f5d24-c9bd-4643-b5cc-742dbf09a4ab",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ChangeWeapon",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "1D Axis",
-                    "id": "51106095-ffba-48cd-aa07-792cc2495b28",
+                    "id": "b3fb2ec6-b965-4699-b33c-eedecd05a5f0",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -551,7 +540,7 @@
                 },
                 {
                     "name": "negative",
-                    "id": "80ab0776-82c8-4519-8e78-b3de1b60facc",
+                    "id": "4c342c7f-3271-48e7-ab2f-1ae11b266a8b",
                     "path": "<Mouse>/scroll/up",
                     "interactions": "",
                     "processors": "",
@@ -562,7 +551,7 @@
                 },
                 {
                     "name": "positive",
-                    "id": "a890dd96-2df2-474b-a5f3-0c6b05cf3189",
+                    "id": "9c9a2fca-66d3-478a-8296-09277a75d5b2",
                     "path": "<Mouse>/scroll/down",
                     "interactions": "",
                     "processors": "",
