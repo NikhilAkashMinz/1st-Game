@@ -15,15 +15,26 @@ public class Weapon : MonoBehaviour
 
    [Header("Reload")]
    public float reloadTime;
-   public bool isReloading;
+    public bool isReloading;
+
+    [Header("Recoil")]
+    public float recoilStrength;
+    public float recoilTime; 
 
    [Header("Reference")]
    public Transform shootingPoint;
    public Transform shellSpawnPoint;
-   public GameObject shellPrefab;
-   public Sprite weaponIconSprite;
+    public GameObject shellPrefab;
+    public GameObject effectPrefab;
+    public GameObject hitEffectPrefab;
+    public Sprite weaponIconSprite;
+   
+    [Header("LineRender")]
+    public  float widthMultiplier;
+    public float visibleLineTime;
 
-   public float visibleLineTime;
+   [SerializeField]
+   public WeaponData weaponData = new WeaponData();
  
  
    public bool ReloadCheck()
@@ -42,4 +53,35 @@ public class Weapon : MonoBehaviour
       storageAmmo -= ammoToReload;
       isReloading = false;
    }
+
+   public void SaveWeaponData()
+{
+    weaponData.ID = ID;
+    weaponData.currentAmmo = currentAmmo;
+    weaponData.storageAmmo = storageAmmo;
+
+    // ✅ Save the data object, not the method
+    SaveLoadManager.Instance.Save<WeaponData>(
+        weaponData,
+        SaveLoadManager.Instance.folderName,
+        ID + ".json"
+    );
+}
+
+public void LoadWeaponData()
+{
+    // ✅ Load the data object, not the method
+    SaveLoadManager.Instance.Load<WeaponData>(
+        weaponData,
+        SaveLoadManager.Instance.folderName,
+        ID + ".json"
+    );
+
+    if (!string.IsNullOrEmpty(weaponData.ID))
+    {
+        currentAmmo = weaponData.currentAmmo;
+        storageAmmo = weaponData.storageAmmo;
+    }
+}
+
 }

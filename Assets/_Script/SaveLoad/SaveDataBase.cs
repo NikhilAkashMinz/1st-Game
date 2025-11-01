@@ -34,4 +34,14 @@ public class CheckpointData
         checkpointKey = "Check1";
         facingRight = true;
     }
+
+}
+
+
+[System.Serializable]
+public class WeaponData
+{
+    public string ID;
+    public int currentAmmo;
+    public int storageAmmo;
 }

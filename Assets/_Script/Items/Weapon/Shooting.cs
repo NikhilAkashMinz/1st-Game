@@ -34,9 +34,17 @@ public class Shooting : MonoBehaviour
   void Start()
   {
     currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
+    LoadWeapons();
     OnUpdateAllInfo?.Invoke(currentWeapon.weaponIconSprite, currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
   }
 
+  private void LoadWeapons()
+  {
+    foreach(Weapon weapon in player.listToSaveandLoad)
+    {
+      weapon.LoadWeaponData();
+    } 
+  }
   private void OnEnable()
   {
     shootActionRef.action.performed += TryToShoot;
@@ -73,6 +81,7 @@ public class Shooting : MonoBehaviour
       player.currentWeaponType = currentWeaponType;
       currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
       player.anim.SetLayerWeight(1, 1);
+      player.SetWeaponPosition();
     }
     else
     {
@@ -86,7 +95,9 @@ public class Shooting : MonoBehaviour
       player.currentWeaponType = currentWeaponType;
       currentWeapon = player.currentWeaponPrefab.GetComponent<Weapon>();
       player.anim.SetLayerWeight(1, 0);
+      player.SetWeaponPosition();
     }
+    OnUpdateAllInfo?.Invoke(currentWeapon.weaponIconSprite, currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
   }
 
   private void StopChangeWeapon(InputAction.CallbackContext value)
@@ -121,9 +132,19 @@ public class Shooting : MonoBehaviour
 
   private void Shoot()
   {
-    if(currentWeapon.currentAmmo <= 0  || currentWeapon.isReloading) return;
-    
+    if (currentWeapon.currentAmmo <= 0 || currentWeapon.isReloading) return;
+
+    Instantiate(currentWeapon.shellPrefab, currentWeapon.shellSpawnPoint.position, currentWeapon.transform.rotation);
+    currentWeapon.effectPrefab.transform.position = currentWeapon.shootingPoint.position;
+    currentWeapon.effectPrefab.SetActive(true);
+
+    if (player.stateMachine.currentState != PlayerState.State.ShootUp)
+      currentWeapon.transform.localPosition = player.defaultWeaponVectorPos - Vector3.right * currentWeapon.recoilStrength;
+    else
+      currentWeapon.transform.localPosition = player.defaultWeaponVectorPos - Vector3.up * currentWeapon.recoilStrength;
+
     lineRenderer.positionCount = 2;
+    lineRenderer.widthMultiplier = currentWeapon.widthMultiplier;
     Vector3 direction = currentWeapon.shootingPoint.right;
     RaycastHit2D hitInfo = Physics2D.Raycast(currentWeapon.shootingPoint.position, direction, shootRange, whatToHit);
     
@@ -132,8 +153,13 @@ public class Shooting : MonoBehaviour
       startPoint = currentWeapon.shootingPoint.position;
       endPoint = hitInfo.point;
       lineRenderer.SetPosition(0, startPoint);
-      lineRenderer.SetPosition(1,endPoint);
-        Debug.Log("We Hit something");
+      lineRenderer.SetPosition(1, endPoint);
+
+      Vector2 normal = hitInfo.normal;
+      float angle = Mathf.Atan2(normal.y, normal.x) * Mathf.Rad2Deg;
+      Quaternion rotation = Quaternion.Euler(0, 0, angle);
+      Instantiate(currentWeapon.hitEffectPrefab, hitInfo.point, rotation);
+      Debug.Log("We Hit something");
     } 
     else 
     {
@@ -150,10 +176,25 @@ public class Shooting : MonoBehaviour
     OnUpdateAmmo.Invoke(currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
   }
 
+  public void AddStorageAmmo(string ID, int ammoToAdd)
+  {
+    foreach(Weapon weapon in player.listToSaveandLoad)
+    {
+      if(weapon.ID == ID)
+      {
+        weapon.storageAmmo += ammoToAdd;
+        OnUpdateAllInfo?.Invoke(currentWeapon.weaponIconSprite, currentWeapon.currentAmmo, currentWeapon.maxAmmo, currentWeapon.storageAmmo);
+        break;
+      }
+    }
+  }
+
   private IEnumerator ShootDelay()
   {
     shootCooldownOver = false;
-    yield return new WaitForSeconds(currentWeapon.shootCooldown);
+    yield return new WaitForSeconds(currentWeapon.recoilTime);
+    currentWeapon.transform.localPosition = player.defaultWeaponVectorPos;
+    yield return new WaitForSeconds(currentWeapon.shootCooldown - currentWeapon.recoilTime);
     shootCooldownOver = true;
   }
 
