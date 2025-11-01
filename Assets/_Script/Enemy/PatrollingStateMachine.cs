@@ -111,7 +111,7 @@ public void EndOfAttack()
 
     if (patrollPhysics.inAttackRange)
     {
-        ChangeState(EnemyState.Attack); // Re-attack if still in range
+       anim.Play(attackAnimationName, 0, 0f); // Re-attack if still in range
     }
     else
     {
