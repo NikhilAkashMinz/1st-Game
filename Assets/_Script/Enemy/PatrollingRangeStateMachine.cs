@@ -1,7 +1,7 @@
 using UnityEngine;
-using System.Collections; 
+using System.Collections;
 
-public class PatrollingStateMachine : EnemySimpleStateMachine
+public class PatrollingRangeStateMachine : EnemySimpleStateMachine 
 {
     [SerializeField] private PatrollPhysics patrollPhysics;
 
@@ -22,6 +22,15 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
 
     [Header("Attack State")]
     [SerializeField] private string attackAnimationName;
+    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private float rayLength;
+    [SerializeField] private float damage;
+    [SerializeField] private float shootCooldown;
+    [SerializeField] private float visibleLineTime;
+    [SerializeField] private Transform shootingPoint;
+    [SerializeField] private GameObject hitEffectPrefab;
+    [SerializeField] private LayerMask whatToHit;
+
 
     [Header("Death State")]
     [SerializeField] private string deathAnimationName;
@@ -46,12 +55,12 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
         }
         
         idleStateTimer -= Time.deltaTime;
-        if (idleStateTimer <= 0f || patrollPhysics.playerAhead)
+        if (idleStateTimer <= 0f || patrollPhysics.playerAhead==false)
         {
             ChangeState(EnemyState.Move);
         }
 
-        if (patrollPhysics.inAttackRange)
+        if (patrollPhysics.playerAhead)
         {
             ChangeState(EnemyState.Attack);
         }
@@ -101,7 +110,7 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
             turnCooldown = minimumTurnDelay;
         }
 
-        if (patrollPhysics.inAttackRange)
+        if (patrollPhysics.playerAhead)
         {
             ChangeState(EnemyState.Attack);
         }
@@ -129,7 +138,7 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
         if (patrollPhysics == null)
             return;
 
-        if (patrollPhysics.inAttackRange)
+        if (patrollPhysics.playerAhead)
         {
             anim.Play(attackAnimationName, 0, 0f); // Re-attack if still in range
         }
@@ -145,6 +154,38 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
         yield return new WaitForSeconds(0.5f);
         patrollPhysics.canCheckBehind = true;
     }
+
+    public void ShootAttack()
+    {
+        RaycastHit2D hitInfo = Physics2D.Raycast(shootingPoint.position, transform.right, rayLength, whatToHit);
+        lineRenderer.positionCount = 2;
+        if (hitInfo)
+        {
+            lineRenderer.SetPosition(0, shootingPoint.position);
+            lineRenderer.SetPosition(1, hitInfo.point);
+            Vector2 normal = hitInfo.normal;
+            float angle = Mathf.Atan2(normal.y, normal.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+            Instantiate(hitEffectPrefab, hitInfo.point, rotation);
+            PlayerStats playerStats = hitInfo.collider.GetComponent<PlayerStats>();
+            if (playerStats != null)
+            {
+                playerStats.DamagePlayer(damage);
+            }
+        }
+        else
+        {
+            lineRenderer.SetPosition(0, shootingPoint.position);
+            lineRenderer.SetPosition(1, shootingPoint.position + transform.right * 20);
+        }
+        StartCoroutine(ResetShootLine());
+    }
+    private IEnumerator ResetShootLine()
+    {
+        yield return new WaitForSeconds(visibleLineTime);
+        lineRenderer.positionCount = 0;
+    }
+
     #endregion ATTACK
 
     #region DEATH
@@ -157,4 +198,6 @@ public class PatrollingStateMachine : EnemySimpleStateMachine
 
     #endregion DEATH
 }
+
+
 

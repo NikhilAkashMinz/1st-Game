@@ -159,6 +159,12 @@ public class Shooting : MonoBehaviour
       float angle = Mathf.Atan2(normal.y, normal.x) * Mathf.Rad2Deg;
       Quaternion rotation = Quaternion.Euler(0, 0, angle);
       Instantiate(currentWeapon.hitEffectPrefab, hitInfo.point, rotation);
+
+      EnemyStats enemyStats = hitInfo.collider.GetComponent<EnemyStats>();
+      if(enemyStats != null)
+      {
+        enemyStats.TakeDamage(currentWeapon.damage);
+      }
       Debug.Log("We Hit something");
     } 
     else 

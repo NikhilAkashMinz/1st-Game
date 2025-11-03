@@ -1030,7 +1030,7 @@ MonoBehaviour:
   currentWeapon: {fileID: 0}
   whatToHit:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 32832
   shootRange: 20
   lineRenderer: {fileID: 6592414661326392519}
 --- !u!120 &6592414661326392519
@@ -1081,9 +1081,7 @@ LineRenderer:
   m_SortingLayerID: 1809325415
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  m_Positions: []
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -1742,10 +1740,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8038608102654608025}
   healthBarControl: {fileID: 0}
-  maxHealth: 5
+  maxHealth: 100
   flashDuration: 0.3
   flashStrength: 0.8
-  flashCol: {r: 1, g: 0.28103277, b: 0.1462264, a: 0}
+  flashCol: {r: 1, g: 1, b: 1, a: 0}
   flashMaterial: {fileID: 2100000, guid: 22ed6e89dd4dbcd4d95ba79755ad7864, type: 2}
   standStatsCol: {fileID: 2550892129943508873}
   crouchStatsCol: {fileID: 2939066128403682010}
@@ -1901,12 +1899,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
+      propertyPath: storageAmmo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
       propertyPath: effectPrefab
       value: 
       objectReference: {fileID: 8932792528394499203}
     - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
       propertyPath: recoilStrength
-      value: 0.1
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 2647225749023603249, guid: 2fe62b0f7f328064daa9c4458ebd3f36, type: 3}
+    - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
+      propertyPath: widthMultiplier
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 2595092085296972979, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2029,6 +2039,14 @@ PrefabInstance:
     - target: {fileID: 4242887045565267235, guid: ab8ce29a0f1a010469d1905d60bf71c7, type: 3}
       propertyPath: recoilStrength
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242887045565267235, guid: ab8ce29a0f1a010469d1905d60bf71c7, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 2647225749023603249, guid: 2fe62b0f7f328064daa9c4458ebd3f36, type: 3}
+    - target: {fileID: 4242887045565267235, guid: ab8ce29a0f1a010469d1905d60bf71c7, type: 3}
+      propertyPath: widthMultiplier
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4412866323812315719, guid: ab8ce29a0f1a010469d1905d60bf71c7, type: 3}
       propertyPath: m_LocalPosition.x

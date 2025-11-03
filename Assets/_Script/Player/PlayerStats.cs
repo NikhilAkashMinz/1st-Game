@@ -41,10 +41,10 @@ public class PlayerStats : MonoBehaviour
         StartCoroutine(Flash());
         if (currentHealth <= 0)
         {
+            DisableStatscollider();
             if (player.stateMachine.currentState != PlayerState.State.Knockback)
             {
                 player.stateMachine.ChangeState(PlayerState.State.Death);
-                //currentStatsCol.enabled = false;
             }
         }
     }
