@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: ccb29c7972475d54da4513fb5f778e6f
+guid: b387b4fa4cfea5a4baff0119b3a92ed8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4312535042449374990
-    second: Boss_Energy_128x128_0
+      213: 1891884887021570966
+    second: spr_StrikerDash_strip_0
   - first:
-      213: 975811507201084521
-    second: Boss_Energy_128x128_1
+      213: -8174104727354534690
+    second: spr_StrikerDash_strip_1
   - first:
-      213: 8325562358945799171
-    second: Boss_Energy_128x128_2
+      213: -40940646441338392
+    second: spr_StrikerDash_strip_2
   - first:
-      213: -2135301819995357116
-    second: Boss_Energy_128x128_3
+      213: 7670377727281452992
+    second: spr_StrikerDash_strip_3
   - first:
-      213: 7425797913957245451
-    second: Boss_Energy_128x128_4
+      213: 6350930498693313991
+    second: spr_StrikerDash_strip_4
   - first:
-      213: 7799424289897883412
-    second: Boss_Energy_128x128_5
+      213: -4139439837424765390
+    second: spr_StrikerDash_strip_5
   - first:
-      213: -7045154159502836630
-    second: Boss_Energy_128x128_6
+      213: 5412679958734541296
+    second: spr_StrikerDash_strip_6
   - first:
-      213: -7197591995172970247
-    second: Boss_Energy_128x128_7
+      213: -2762627379697588864
+    second: spr_StrikerDash_strip_7
+  - first:
+      213: 4284645808401850633
+    second: spr_StrikerDash_strip_8
+  - first:
+      213: 270600758403180713
+    second: spr_StrikerDash_strip_9
+  - first:
+      213: -1075537398262496340
+    second: spr_StrikerDash_strip_10
+  - first:
+      213: -3603222473789913697
+    second: spr_StrikerDash_strip_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,19 +143,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -160,177 +159,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_Energy_128x128_0
+      name: spr_StrikerDash_strip_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 14
+        y: 27
+        width: 44
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f081694a3cc624c0800000000000000
-      internalID: -4312535042449374990
+      spriteID: 69bc9d6f743514a10800000000000000
+      internalID: 1891884887021570966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_1
+      name: spr_StrikerDash_strip_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 113
+        y: 27
+        width: 42
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96c857e4567ca8d00800000000000000
-      internalID: 975811507201084521
+      spriteID: ed411390f0fbf8e80800000000000000
+      internalID: -8174104727354534690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_2
+      name: spr_StrikerDash_strip_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 210
+        y: 27
+        width: 38
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30cd350dad65a8370800000000000000
-      internalID: 8325562358945799171
+      spriteID: 8e93dffe2bc8e6ff0800000000000000
+      internalID: -40940646441338392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_3
+      name: spr_StrikerDash_strip_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
+        x: 305
+        y: 27
+        width: 38
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4408eeade42ed52e0800000000000000
-      internalID: -2135301819995357116
+      spriteID: 0c7ddaf47e7a27a60800000000000000
+      internalID: 7670377727281452992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_4
+      name: spr_StrikerDash_strip_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
+        x: 410
+        y: 27
+        width: 30
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b022243fbdbbd0760800000000000000
-      internalID: 7425797913957245451
+      spriteID: 7c53fcfc3a9032850800000000000000
+      internalID: 6350930498693313991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_5
+      name: spr_StrikerDash_strip_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
+        x: 517
+        y: 27
+        width: 35
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 417aaeb811f1d3c60800000000000000
-      internalID: 7799424289897883412
+      spriteID: 23632394661cd86c0800000000000000
+      internalID: -4139439837424765390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_6
+      name: spr_StrikerDash_strip_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
+        x: 606
+        y: 27
+        width: 34
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6cb7f66e959a3e90800000000000000
-      internalID: -7045154159502836630
+      spriteID: 0f19f3faeb3bd1b40800000000000000
+      internalID: 5412679958734541296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_7
+      name: spr_StrikerDash_strip_7
       rect:
         serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
+        x: 699
+        y: 27
+        width: 42
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f0258107340d1c90800000000000000
-      internalID: -7197591995172970247
+      spriteID: 0856b52090d29a9d0800000000000000
+      internalID: -2762627379697588864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerDash_strip_8
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 27
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901a82669ae167b30800000000000000
+      internalID: 4284645808401850633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerDash_strip_9
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 27
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8a290c4fd51c300800000000000000
+      internalID: 270600758403180713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerDash_strip_10
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 27
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca38ae94f6ce211f0800000000000000
+      internalID: -1075537398262496340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_StrikerDash_strip_11
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 27
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f954c033048cefdc0800000000000000
+      internalID: -3603222473789913697
       vertices: []
       indices: 
       edges: []
@@ -339,7 +426,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 676135a23b760e34db209d121ec848f4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -347,18 +434,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Boss_Energy_128x128_0: -4312535042449374990
-      Boss_Energy_128x128_1: 975811507201084521
-      Boss_Energy_128x128_2: 8325562358945799171
-      Boss_Energy_128x128_3: -2135301819995357116
-      Boss_Energy_128x128_4: 7425797913957245451
-      Boss_Energy_128x128_5: 7799424289897883412
-      Boss_Energy_128x128_6: -7045154159502836630
-      Boss_Energy_128x128_7: -7197591995172970247
+      spr_StrikerDash_strip_0: 1891884887021570966
+      spr_StrikerDash_strip_1: -8174104727354534690
+      spr_StrikerDash_strip_10: -1075537398262496340
+      spr_StrikerDash_strip_11: -3603222473789913697
+      spr_StrikerDash_strip_2: -40940646441338392
+      spr_StrikerDash_strip_3: 7670377727281452992
+      spr_StrikerDash_strip_4: 6350930498693313991
+      spr_StrikerDash_strip_5: -4139439837424765390
+      spr_StrikerDash_strip_6: 5412679958734541296
+      spr_StrikerDash_strip_7: -2762627379697588864
+      spr_StrikerDash_strip_8: 4284645808401850633
+      spr_StrikerDash_strip_9: 270600758403180713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

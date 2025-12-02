@@ -70,7 +70,6 @@ public class Weapon : MonoBehaviour
 
 public void LoadWeaponData()
 {
-    // ✅ Load the data object, not the method
     SaveLoadManager.Instance.Load<WeaponData>(
         weaponData,
         SaveLoadManager.Instance.folderName,

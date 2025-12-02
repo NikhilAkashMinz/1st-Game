@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: ccb29c7972475d54da4513fb5f778e6f
+guid: ed3547ef633b8c840ad26e04815d8f49
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4312535042449374990
-    second: Boss_Energy_128x128_0
+      213: -2878776438291150895
+    second: spr_StrikerIdle_strip_0
   - first:
-      213: 975811507201084521
-    second: Boss_Energy_128x128_1
+      213: 3203364070431964461
+    second: spr_StrikerIdle_strip_1
   - first:
-      213: 8325562358945799171
-    second: Boss_Energy_128x128_2
+      213: 8959686590502790556
+    second: spr_StrikerIdle_strip_2
   - first:
-      213: -2135301819995357116
-    second: Boss_Energy_128x128_3
+      213: -5440983359157643148
+    second: spr_StrikerIdle_strip_3
   - first:
-      213: 7425797913957245451
-    second: Boss_Energy_128x128_4
+      213: -4082893085399752493
+    second: spr_StrikerIdle_strip_4
   - first:
-      213: 7799424289897883412
-    second: Boss_Energy_128x128_5
+      213: 9190622102364108476
+    second: spr_StrikerIdle_strip_5
   - first:
-      213: -7045154159502836630
-    second: Boss_Energy_128x128_6
+      213: -8322215239142971479
+    second: spr_StrikerIdle_strip_6
   - first:
-      213: -7197591995172970247
-    second: Boss_Energy_128x128_7
+      213: -6108167506804859572
+    second: spr_StrikerIdle_strip_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,19 +131,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -160,177 +147,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_Energy_128x128_0
+      name: spr_StrikerIdle_strip_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 17
+        y: 27
+        width: 41
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f081694a3cc624c0800000000000000
-      internalID: -4312535042449374990
+      spriteID: 1d744efe4188c08d0800000000000000
+      internalID: -2878776438291150895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_1
+      name: spr_StrikerIdle_strip_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 113
+        y: 27
+        width: 41
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96c857e4567ca8d00800000000000000
-      internalID: 975811507201084521
+      spriteID: d2db85066a2a47c20800000000000000
+      internalID: 3203364070431964461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_2
+      name: spr_StrikerIdle_strip_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 209
+        y: 27
+        width: 41
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30cd350dad65a8370800000000000000
-      internalID: 8325562358945799171
+      spriteID: c95efbdcb73375c70800000000000000
+      internalID: 8959686590502790556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_3
+      name: spr_StrikerIdle_strip_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
+        x: 305
+        y: 27
+        width: 41
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4408eeade42ed52e0800000000000000
-      internalID: -2135301819995357116
+      spriteID: 478d890667ebd74b0800000000000000
+      internalID: -5440983359157643148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_4
+      name: spr_StrikerIdle_strip_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
+        x: 401
+        y: 27
+        width: 41
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b022243fbdbbd0760800000000000000
-      internalID: 7425797913957245451
+      spriteID: 3d069d4fe56a657c0800000000000000
+      internalID: -4082893085399752493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_5
+      name: spr_StrikerIdle_strip_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
+        x: 497
+        y: 27
+        width: 41
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 417aaeb811f1d3c60800000000000000
-      internalID: 7799424289897883412
+      spriteID: cb6344cab16ab8f70800000000000000
+      internalID: 9190622102364108476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_6
+      name: spr_StrikerIdle_strip_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
+        x: 593
+        y: 27
+        width: 41
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6cb7f66e959a3e90800000000000000
-      internalID: -7045154159502836630
+      spriteID: 9a76a8e355d818c80800000000000000
+      internalID: -8322215239142971479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_7
+      name: spr_StrikerIdle_strip_7
       rect:
         serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
+        x: 689
+        y: 27
+        width: 41
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f0258107340d1c90800000000000000
-      internalID: -7197591995172970247
+      spriteID: c4d1058d30e6b3ba0800000000000000
+      internalID: -6108167506804859572
       vertices: []
       indices: 
       edges: []
@@ -339,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 676135a23b760e34db209d121ec848f4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -347,18 +334,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Boss_Energy_128x128_0: -4312535042449374990
-      Boss_Energy_128x128_1: 975811507201084521
-      Boss_Energy_128x128_2: 8325562358945799171
-      Boss_Energy_128x128_3: -2135301819995357116
-      Boss_Energy_128x128_4: 7425797913957245451
-      Boss_Energy_128x128_5: 7799424289897883412
-      Boss_Energy_128x128_6: -7045154159502836630
-      Boss_Energy_128x128_7: -7197591995172970247
+      spr_StrikerIdle_strip_0: -2878776438291150895
+      spr_StrikerIdle_strip_1: 3203364070431964461
+      spr_StrikerIdle_strip_2: 8959686590502790556
+      spr_StrikerIdle_strip_3: -5440983359157643148
+      spr_StrikerIdle_strip_4: -4082893085399752493
+      spr_StrikerIdle_strip_5: 9190622102364108476
+      spr_StrikerIdle_strip_6: -8322215239142971479
+      spr_StrikerIdle_strip_7: -6108167506804859572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

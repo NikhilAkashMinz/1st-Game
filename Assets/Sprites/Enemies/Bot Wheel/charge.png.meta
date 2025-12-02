@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: b1abd199272ca2548af761dcd5382150
+guid: 3d42b379f13efbc429faa2f6b43a7e2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3444004556409601691
-    second: Boss_Energy_Explosion_128x128_0
+      213: 6948672925027435140
+    second: charge_0
   - first:
-      213: -8686114869899377710
-    second: Boss_Energy_Explosion_128x128_1
+      213: 8044723202107836511
+    second: charge_1
   - first:
-      213: 4754278823615861459
-    second: Boss_Energy_Explosion_128x128_2
+      213: 8979233852318062227
+    second: charge_2
   - first:
-      213: -3301451330360664178
-    second: Boss_Energy_Explosion_128x128_3
-  - first:
-      213: 6468578934669631607
-    second: Boss_Energy_Explosion_128x128_4
-  - first:
-      213: 1607029240078475306
-    second: Boss_Energy_Explosion_128x128_5
-  - first:
-      213: -1494960189958202602
-    second: Boss_Energy_Explosion_128x128_6
-  - first:
-      213: 8664240726484507540
-    second: Boss_Energy_Explosion_128x128_7
+      213: 70618444694489238
+    second: charge_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,19 +119,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -160,155 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_Energy_Explosion_128x128_0
+      name: charge_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 14
+        y: 78
+        width: 25
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9efe9d95ef8bcf20800000000000000
-      internalID: 3444004556409601691
+      spriteID: 48282aca535ae6060800000000000000
+      internalID: 6948672925027435140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_Explosion_128x128_1
+      name: charge_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 14
+        y: 52
+        width: 25
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d3c86dfb88b47780800000000000000
-      internalID: -8686114869899377710
+      spriteID: f580bf9212994af60800000000000000
+      internalID: 8044723202107836511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_Explosion_128x128_2
+      name: charge_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 14
+        y: 26
+        width: 25
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d219cc96679af140800000000000000
-      internalID: 4754278823615861459
+      spriteID: 396949a5d95ac9c70800000000000000
+      internalID: 8979233852318062227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_Explosion_128x128_3
+      name: charge_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 14
         y: 0
-        width: 128
-        height: 128
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8f9c92c183ee22d0800000000000000
-      internalID: -3301451330360664178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_Energy_Explosion_128x128_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 770ee82e44205c950800000000000000
-      internalID: 6468578934669631607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_Energy_Explosion_128x128_5
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a202b8654905d4610800000000000000
-      internalID: 1607029240078475306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_Energy_Explosion_128x128_6
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61bd03cb0a5d04be0800000000000000
-      internalID: -1494960189958202602
+      spriteID: 6980b9ee913eaf000800000000000000
+      internalID: 70618444694489238
       vertices: []
       indices: 
       edges: []
@@ -317,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 52807e814c6d6b44fb034ba30ef022d7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -325,17 +234,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Boss_Energy_Explosion_128x128_0: 3444004556409601691
-      Boss_Energy_Explosion_128x128_1: -8686114869899377710
-      Boss_Energy_Explosion_128x128_2: 4754278823615861459
-      Boss_Energy_Explosion_128x128_3: -3301451330360664178
-      Boss_Energy_Explosion_128x128_4: 6468578934669631607
-      Boss_Energy_Explosion_128x128_5: 1607029240078475306
-      Boss_Energy_Explosion_128x128_6: -1494960189958202602
+      charge_0: 6948672925027435140
+      charge_1: 8044723202107836511
+      charge_2: 8979233852318062227
+      charge_3: 70618444694489238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

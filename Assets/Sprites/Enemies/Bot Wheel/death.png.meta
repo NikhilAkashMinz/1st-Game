@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: ccb29c7972475d54da4513fb5f778e6f
+guid: 6028f668856c9554da7b9f107fc635d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4312535042449374990
-    second: Boss_Energy_128x128_0
+      213: -9192638271177797499
+    second: death_0
   - first:
-      213: 975811507201084521
-    second: Boss_Energy_128x128_1
+      213: 8559509556701815258
+    second: death_1
   - first:
-      213: 8325562358945799171
-    second: Boss_Energy_128x128_2
+      213: -5286180679089938723
+    second: death_2
   - first:
-      213: -2135301819995357116
-    second: Boss_Energy_128x128_3
+      213: -1891855120789479077
+    second: death_3
   - first:
-      213: 7425797913957245451
-    second: Boss_Energy_128x128_4
+      213: -5582970244224541034
+    second: death_4
   - first:
-      213: 7799424289897883412
-    second: Boss_Energy_128x128_5
-  - first:
-      213: -7045154159502836630
-    second: Boss_Energy_128x128_6
-  - first:
-      213: -7197591995172970247
-    second: Boss_Energy_128x128_7
+      213: 830680230883465780
+    second: death_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,19 +125,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -160,177 +141,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_Energy_128x128_0
+      name: death_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 9
+        y: 130
+        width: 25
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f081694a3cc624c0800000000000000
-      internalID: -4312535042449374990
+      spriteID: 58059c172303d6080800000000000000
+      internalID: -9192638271177797499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_1
+      name: death_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 6
+        y: 104
+        width: 29
+        height: 22
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96c857e4567ca8d00800000000000000
-      internalID: 975811507201084521
+      spriteID: ad1e5c2779c79c670800000000000000
+      internalID: 8559509556701815258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_2
+      name: death_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 5
+        y: 78
+        width: 24
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30cd350dad65a8370800000000000000
-      internalID: 8325562358945799171
+      spriteID: dde9f440ea6b3a6b0800000000000000
+      internalID: -5286180679089938723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_3
+      name: death_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
+        x: 4
+        y: 52
+        width: 26
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4408eeade42ed52e0800000000000000
-      internalID: -2135301819995357116
+      spriteID: b51e6d68ac7ceb5e0800000000000000
+      internalID: -1891855120789479077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_4
+      name: death_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
+        x: 4
+        y: 26
+        width: 26
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b022243fbdbbd0760800000000000000
-      internalID: 7425797913957245451
+      spriteID: 69e9b69842e4582b0800000000000000
+      internalID: -5582970244224541034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_Energy_128x128_5
+      name: death_5
       rect:
         serializedVersion: 2
-        x: 640
+        x: 4
         y: 0
-        width: 128
-        height: 128
+        width: 26
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 417aaeb811f1d3c60800000000000000
-      internalID: 7799424289897883412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_Energy_128x128_6
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6cb7f66e959a3e90800000000000000
-      internalID: -7045154159502836630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_Energy_128x128_7
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f0258107340d1c90800000000000000
-      internalID: -7197591995172970247
+      spriteID: 43a9fb3d44b278b00800000000000000
+      internalID: 830680230883465780
       vertices: []
       indices: 
       edges: []
@@ -339,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 676135a23b760e34db209d121ec848f4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -347,18 +284,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Boss_Energy_128x128_0: -4312535042449374990
-      Boss_Energy_128x128_1: 975811507201084521
-      Boss_Energy_128x128_2: 8325562358945799171
-      Boss_Energy_128x128_3: -2135301819995357116
-      Boss_Energy_128x128_4: 7425797913957245451
-      Boss_Energy_128x128_5: 7799424289897883412
-      Boss_Energy_128x128_6: -7045154159502836630
-      Boss_Energy_128x128_7: -7197591995172970247
+      death_0: -9192638271177797499
+      death_1: 8559509556701815258
+      death_2: -5286180679089938723
+      death_3: -1891855120789479077
+      death_4: -5582970244224541034
+      death_5: 830680230883465780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
