@@ -1740,7 +1740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8038608102654608025}
   healthBarControl: {fileID: 0}
-  maxHealth: 100
+  maxHealth: 10
   flashDuration: 0.3
   flashStrength: 0.8
   flashCol: {r: 1, g: 1, b: 1, a: 0}
@@ -1883,6 +1883,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5125487243222315080}
     m_Modifications:
     - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
       propertyPath: recoilTime
       value: 0.09
       objectReference: {fileID: 0}
@@ -1900,7 +1904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
       propertyPath: storageAmmo
-      value: 0
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2585060979579947991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
       propertyPath: effectPrefab
@@ -2031,6 +2035,10 @@ PrefabInstance:
     - target: {fileID: 4242887045565267235, guid: ab8ce29a0f1a010469d1905d60bf71c7, type: 3}
       propertyPath: recoilTime
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242887045565267235, guid: ab8ce29a0f1a010469d1905d60bf71c7, type: 3}
+      propertyPath: storageAmmo
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4242887045565267235, guid: ab8ce29a0f1a010469d1905d60bf71c7, type: 3}
       propertyPath: effectPrefab

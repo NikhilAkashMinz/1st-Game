@@ -32,6 +32,11 @@ public class FirstBossStateMachine : BossStateMachine
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private Transform shootingPoint;
 
+    [Header("Death State")]
+    [SerializeField] private string deathAnimationName;
+    [SerializeField]private GameObject headPrefab;
+    [SerializeField]private GameObject sakshan;
+
     private void Start()
     {
         player = FindAnyObjectByType<Player>();
@@ -101,7 +106,7 @@ public class FirstBossStateMachine : BossStateMachine
         }
         else if (teleportStateTimer <= 0f)
         {
-            ChangeState(BossState.Idle);
+            ChangeState(BossState.RangeAttack);
         }
     }
 
@@ -165,11 +170,39 @@ public class FirstBossStateMachine : BossStateMachine
 
     public override void EnterRangeAttack()
     {
+        Debug.Log("Boss entered RangeAttack");
         anim.Play(attackRangeAnimationName);
-        bossPhysics.DisableDetectionCol();
-        bossPhysics.inAttackRange = false;
     }
+
+    public void SpawnBossProjectile()
+    {
+        BossProjectile projectile = Instantiate(projectilePrefab, shootingPoint.position, transform.rotation).GetComponent<BossProjectile>();
+        if (player != null)
+        {
+            projectile.MoveProjectile(player.transform);
+        }
+        else
+        {
+            Destroy(projectile.gameObject);
+        }
+    }
+
+
 
     #endregion RANGE ATTACK
 
+    #region DEATH
+        public override void EnterDeath()
+        {
+            anim.Play(deathAnimationName);
+            bossPhysics.DisableAllCol();
+        }
+
+        public void DeathAnimationEvent()
+        {
+            Instantiate(headPrefab, transform.position, transform.rotation);
+            gameObject.SetActive(false);
+            sakshan.SetActive(false);
+        }
+    #endregion DEATH
 }

@@ -7,7 +7,7 @@ public class BossProjectile : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
 
-    private void OnTriggerEnter2D(Colliider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out PlayerStats playerStats))
         {
@@ -22,10 +22,17 @@ public class BossProjectile : MonoBehaviour
     {
         if (playerTransform == null)
         {
-            rb.linearVelocity = Velocity2.down * speed;
+            rb.linearVelocity = Vector2.down * speed;
             return;
         }
 
         Vector3 targetPos = playerTransform.position + new Vector3(0, 1f, 0);
+        Vector2 direction = (targetPos - transform.position).normalized;
+        rb.linearVelocity = direction * speed;
+    }
+
+    public void Destroyer()
+    {
+        Destroy(gameObject);
     }
 }

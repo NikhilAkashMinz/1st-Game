@@ -5,6 +5,7 @@ public class EnemyStats : MonoBehaviour
 {
     //[SerializeField] public EnemySimpleStateMachine enemyStateMachine;
     [SerializeField] protected float health;
+    [SerializeField] protected float maxHealth;
 
 
     [Header("Flash")]

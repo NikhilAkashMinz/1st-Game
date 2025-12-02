@@ -102,10 +102,10 @@ public class BossStateMachine : MonoBehaviour
                 EnterAttack();
                 break;
             case BossState.RangeAttack:
-                UpdateRangeAttack();
+                EnterRangeAttack();
                 break;
             case BossState.Summon:
-                UpdateSummon();
+                EnterSummon();
                 break;
             case BossState.Death:
                 EnterDeath();
