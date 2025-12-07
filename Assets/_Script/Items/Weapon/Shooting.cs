@@ -73,7 +73,7 @@ public class Shooting : MonoBehaviour
     {
       if (player.secondaryWeaponPrefab == null)
         return;
-
+      
       player.primaryWeaponPrefab.SetActive(false);
       player.secondaryWeaponPrefab.SetActive(true);
       player.currentWeaponPrefab = player.secondaryWeaponPrefab;
@@ -134,6 +134,7 @@ public class Shooting : MonoBehaviour
   {
     if (currentWeapon.currentAmmo <= 0 || currentWeapon.isReloading) return;
 
+    currentWeapon.source.Play();
     Instantiate(currentWeapon.shellPrefab, currentWeapon.shellSpawnPoint.position, currentWeapon.transform.rotation);
     currentWeapon.effectPrefab.transform.position = currentWeapon.shootingPoint.position;
     currentWeapon.effectPrefab.SetActive(true);

@@ -4,10 +4,9 @@ using UnityEngine.InputSystem;
 public class Interact : MonoBehaviour
 {
    public InputActionReference interactActionRef;
-
-
    private IInteractable currentInteractable;
    [SerializeField]private GameObject InteractButton;
+   public static bool isInteracting = false;
 
    private void OnEnable()
    {
@@ -22,7 +21,7 @@ public class Interact : MonoBehaviour
    private void TryToInteract(InputAction.CallbackContext value)
    {
         
-       if(currentInteractable != null)
+       if(currentInteractable != null && !isInteracting)
        {
            currentInteractable.CustomInteract();
        }

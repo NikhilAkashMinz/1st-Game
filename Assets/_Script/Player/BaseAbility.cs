@@ -7,6 +7,8 @@ public class BaseAbility : MonoBehaviour
     protected StateMachine linkedStateMachine;
     protected Animator linkedAnimator;
     protected PhysicsControl linkedPhysics;
+    [SerializeField] protected AudioSource source;
+    [SerializeField] protected AudioClip audioClip;
 
     public PlayerState.State thisAbilityState;
     public bool isPermitted = true;

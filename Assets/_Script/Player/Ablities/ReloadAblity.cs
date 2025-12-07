@@ -42,7 +42,6 @@ public class ReloadAblity : BaseAbility
         || linkedStateMachine.currentState == PlayerState.State.Crouch) return;
 
         if(!currentWeapon.ReloadCheck() || currentWeapon.isReloading) return;
-
         reloadCoroutine = StartCoroutine(ReloadProcess());
 
         
@@ -53,6 +52,7 @@ public class ReloadAblity : BaseAbility
         linkedStateMachine.ChangeState(PlayerState.State.Reload);
         currentWeapon.isReloading = true;
         reloadBar.ActivateReloadBar();
+        source.PlayOneShot(audioClip);
 
         float elapsedTime = 0;
         while(elapsedTime <currentWeapon.reloadTime)

@@ -94,7 +94,8 @@ public class MultiipleJumps : BaseAbility
 
     private void TryToJump(InputAction.CallbackContext value)
     {
-        if (!isPermitted || linkedStateMachine.currentState == PlayerState.State.Knockback) return;
+        if (!isPermitted || linkedStateMachine.currentState == PlayerState.State.Knockback || 
+        linkedStateMachine.currentState == PlayerState.State.Reload) return;
         // Check if the player is on a ladder
         if (linkedStateMachine.currentState == PlayerState.State.Ladder)
         {
@@ -108,6 +109,7 @@ public class MultiipleJumps : BaseAbility
             numberOfJumps = maxNumberOfJumps;
             canActivateAdditionalJumps = true;
             numberOfJumps -= 1;
+            source.PlayOneShot(audioClip);
             return;
         }
 
@@ -123,6 +125,7 @@ public class MultiipleJumps : BaseAbility
             numberOfJumps = maxNumberOfJumps;
             canActivateAdditionalJumps = true;
             numberOfJumps -= 1;
+            source.PlayOneShot(audioClip);
             return;
         }
 
@@ -136,6 +139,7 @@ public class MultiipleJumps : BaseAbility
             jumping = true;
             jumpTimer = setMaxJumpTime;
             numberOfJumps -= 1;
+            source.PlayOneShot(audioClip);
         }
         else
         {

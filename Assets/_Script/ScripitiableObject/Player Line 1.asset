@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45677305c3bba44e953da20e3f8e50c, type: 3}
   m_Name: Player Line 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueLine
-  speakerName: Player
-  dialogueText: 'Hi Sheshank Bhai do you have some ammo!!!
-
-'
+  speakerName: Sakasham
+  dialogueText: Hey Vignesh Wanna Suck My Dick
   speakerIcon: {fileID: -2918119079970474202, guid: 0586529c27f321640b41a2dd7fb6edcd, type: 3}

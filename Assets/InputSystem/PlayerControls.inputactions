@@ -631,6 +631,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "DialogueControl",
+            "id": "3e2744c9-f3df-4012-8eab-84bcaad30785",
+            "actions": [
+                {
+                    "name": "Skip",
+                    "type": "Button",
+                    "id": "0bf1750f-0845-4b9e-9c89-6654bff2ecf2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "31d175d0-84c2-4781-9db5-3ee81ffc6dc6",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyBoard",
+                    "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

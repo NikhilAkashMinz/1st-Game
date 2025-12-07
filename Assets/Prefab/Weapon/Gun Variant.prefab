@@ -88,6 +88,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8eb009e949eb33948a76ce09611e638b, type: 3}
+    - target: {fileID: 5050736439943442239, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 557ac2d1c4148da41bd415b604acf799, type: 3}
     - target: {fileID: 5151664884964247991, guid: 7873974fcc4a928429771299fb9139a5, type: 3}
       propertyPath: m_Name
       value: Gun Variant

@@ -25,6 +25,10 @@ public class IdelAblity : BaseAbility
             linkedStateMachine.ChangeState(PlayerState.State.Run);
         }
     }
+    public override void FixedUpdateAbility()
+    {
+        linkedPhysics.rb.linearVelocityX = 0;
+    }
     public override void UpdateAnimator()
     {
         linkedAnimator.SetBool(idleParameterInt, linkedStateMachine.currentState == PlayerState.State.Idle || linkedStateMachine.currentState == PlayerState.State.Reload);

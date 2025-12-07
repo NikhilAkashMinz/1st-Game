@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45677305c3bba44e953da20e3f8e50c, type: 3}
   m_Name: Trader Line 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueLine
-  speakerName: Trader
-  dialogueText: Hello Vignesh The VIRGIN!!! Im Your Old friend Seshank Lund ka Baal!!!.Do
-    You Missed me.
+  speakerName: Virging Vignesh
+  dialogueText: Yes Saksham fuck me
   speakerIcon: {fileID: -7147633681603280933, guid: 0586529c27f321640b41a2dd7fb6edcd, type: 3}
