@@ -134,7 +134,8 @@ public class PhysicsControl : MonoBehaviour
         }
         else
         {
-            coyoteTimer = coyoteSetTime;
+            if(rb.linearVelocityY <= 0.05)
+                coyoteTimer = coyoteSetTime;
         }
     }
 

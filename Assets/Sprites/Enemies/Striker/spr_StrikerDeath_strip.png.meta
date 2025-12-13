@@ -183,12 +183,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 27
-        width: 44
-        height: 33
+        x: 0
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_1
       rect:
         serializedVersion: 2
-        x: 111
-        y: 27
-        width: 43
-        height: 33
+        x: 96
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_2
       rect:
         serializedVersion: 2
-        x: 209
-        y: 27
-        width: 44
-        height: 30
+        x: 192
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_3
       rect:
         serializedVersion: 2
-        x: 305
-        y: 27
-        width: 19
-        height: 8
+        x: 288
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_4
       rect:
         serializedVersion: 2
-        x: 308
-        y: 27
-        width: 41
-        height: 33
+        x: 384
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_5
       rect:
         serializedVersion: 2
-        x: 401
-        y: 27
-        width: 19
-        height: 6
+        x: 480
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -315,12 +315,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_6
       rect:
         serializedVersion: 2
-        x: 418
-        y: 27
-        width: 27
-        height: 32
+        x: 576
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_7
       rect:
         serializedVersion: 2
-        x: 497
-        y: 27
-        width: 19
-        height: 6
+        x: 672
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -359,12 +359,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_8
       rect:
         serializedVersion: 2
-        x: 514
-        y: 27
-        width: 27
-        height: 32
+        x: 768
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -381,12 +381,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_9
       rect:
         serializedVersion: 2
-        x: 592
-        y: 27
-        width: 45
-        height: 32
+        x: 864
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -403,12 +403,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_10
       rect:
         serializedVersion: 2
-        x: 688
-        y: 27
-        width: 45
-        height: 32
+        x: 960
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -425,12 +425,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_11
       rect:
         serializedVersion: 2
-        x: 784
-        y: 27
-        width: 45
-        height: 31
+        x: 1056
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -447,12 +447,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_12
       rect:
         serializedVersion: 2
-        x: 880
-        y: 27
-        width: 45
-        height: 30
+        x: 1152
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -469,12 +469,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_13
       rect:
         serializedVersion: 2
-        x: 977
-        y: 27
-        width: 44
-        height: 8
+        x: 1248
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -491,12 +491,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_14
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 27
-        width: 44
-        height: 8
+        x: 1344
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -513,12 +513,12 @@ TextureImporter:
       name: spr_StrikerDeath_strip_15
       rect:
         serializedVersion: 2
-        x: 1169
-        y: 27
-        width: 44
-        height: 6
+        x: 1440
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -531,77 +531,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: spr_StrikerDeath_strip_16
-      rect:
-        serializedVersion: 2
-        x: 1265
-        y: 27
-        width: 44
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c50346c9806e49710800000000000000
-      internalID: 1699235884083458140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_StrikerDeath_strip_17
-      rect:
-        serializedVersion: 2
-        x: 1360
-        y: 27
-        width: 45
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57811e66d76371d80800000000000000
-      internalID: -8280089477672527755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_StrikerDeath_strip_18
-      rect:
-        serializedVersion: 2
-        x: 1456
-        y: 27
-        width: 45
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e346d0f88eafbea0800000000000000
-      internalID: -5854769087378996252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3d53a49cc340a3d41b7c37d41bfa9073
     internalID: 0
     vertices: []
     indices: 
@@ -609,7 +543,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       spr_StrikerDeath_strip_0: -479164716087823096
       spr_StrikerDeath_strip_1: 4794941496892381385
@@ -619,9 +555,6 @@ TextureImporter:
       spr_StrikerDeath_strip_13: -6816440273583673112
       spr_StrikerDeath_strip_14: -6106431173254951377
       spr_StrikerDeath_strip_15: -1582620575718363833
-      spr_StrikerDeath_strip_16: 1699235884083458140
-      spr_StrikerDeath_strip_17: -8280089477672527755
-      spr_StrikerDeath_strip_18: -5854769087378996252
       spr_StrikerDeath_strip_2: -7249711372055659344
       spr_StrikerDeath_strip_3: -1240271393379337928
       spr_StrikerDeath_strip_4: -8461460540931865339

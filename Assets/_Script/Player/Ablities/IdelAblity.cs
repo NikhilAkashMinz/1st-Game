@@ -25,7 +25,7 @@ public class IdelAblity : BaseAbility
             linkedStateMachine.ChangeState(PlayerState.State.Run);
         }
     }
-    public override void FixedUpdateAbility()
+    public override void ProcessFixedAbility()
     {
         linkedPhysics.rb.linearVelocityX = 0;
     }

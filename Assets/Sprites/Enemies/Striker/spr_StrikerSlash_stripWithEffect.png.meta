@@ -180,12 +180,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 27
-        width: 44
-        height: 33
+        x: 15
+        y: 28
+        width: 42
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_1
       rect:
         serializedVersion: 2
-        x: 145
-        y: 27
-        width: 42
-        height: 35
+        x: 146
+        y: 28
+        width: 40
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_2
       rect:
         serializedVersion: 2
-        x: 278
-        y: 27
-        width: 78
-        height: 35
+        x: 279
+        y: 28
+        width: 76
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_3
       rect:
         serializedVersion: 2
-        x: 421
-        y: 27
-        width: 47
-        height: 35
+        x: 422
+        y: 28
+        width: 45
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_4
       rect:
         serializedVersion: 2
-        x: 538
-        y: 27
-        width: 58
-        height: 35
+        x: 539
+        y: 28
+        width: 56
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -290,12 +290,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_5
       rect:
         serializedVersion: 2
-        x: 667
-        y: 27
-        width: 45
-        height: 38
+        x: 668
+        y: 28
+        width: 43
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_6
       rect:
         serializedVersion: 2
-        x: 785
-        y: 27
-        width: 72
-        height: 39
+        x: 786
+        y: 28
+        width: 70
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_7
       rect:
         serializedVersion: 2
-        x: 923
-        y: 27
-        width: 64
-        height: 35
+        x: 924
+        y: 28
+        width: 62
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_8
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 27
-        width: 40
-        height: 33
+        x: 1048
+        y: 28
+        width: 38
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_9
       rect:
         serializedVersion: 2
-        x: 1172
-        y: 27
-        width: 43
-        height: 33
+        x: 1173
+        y: 28
+        width: 41
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_10
       rect:
         serializedVersion: 2
-        x: 1294
-        y: 27
-        width: 49
-        height: 33
+        x: 1295
+        y: 28
+        width: 47
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_11
       rect:
         serializedVersion: 2
-        x: 1422
-        y: 27
-        width: 49
-        height: 33
+        x: 1423
+        y: 28
+        width: 47
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,12 +444,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_12
       rect:
         serializedVersion: 2
-        x: 1471
-        y: 45
-        width: 10
-        height: 10
+        x: 1472
+        y: 46
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_13
       rect:
         serializedVersion: 2
-        x: 1550
-        y: 27
-        width: 61
-        height: 33
+        x: 1551
+        y: 28
+        width: 59
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_14
       rect:
         serializedVersion: 2
-        x: 1674
-        y: 27
-        width: 53
-        height: 34
+        x: 1675
+        y: 28
+        width: 51
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,12 +510,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_15
       rect:
         serializedVersion: 2
-        x: 1727
-        y: 47
-        width: 42
-        height: 7
+        x: 1728
+        y: 48
+        width: 40
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -532,12 +532,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_16
       rect:
         serializedVersion: 2
-        x: 1798
-        y: 27
-        width: 52
-        height: 34
+        x: 1799
+        y: 28
+        width: 50
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: spr_StrikerSlash_stripWithEffect_17
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 27
-        width: 120
-        height: 34
+        x: 1859
+        y: 28
+        width: 118
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -576,7 +576,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3b974a3fe32c94e469b49ba3df77795e
     internalID: 0
     vertices: []
     indices: 
@@ -584,7 +584,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":90.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       spr_StrikerSlash_stripWithEffect_0: 8258314228247372054
       spr_StrikerSlash_stripWithEffect_1: 9069769131732061362

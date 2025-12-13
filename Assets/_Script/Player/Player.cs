@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
             }
             ability.UpdateAnimator();
         }
+        Flip();
        // Debug.Log($"Current State: {stateMachine.currentState}");
     }
 

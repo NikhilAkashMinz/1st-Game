@@ -997,7 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2186cb449a77c674ebda5d62aefe8a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 0}
+  source: {fileID: 4367811986963061650}
   audioClip: {fileID: 0}
   thisAbilityState: 1
   isPermitted: 1
@@ -1014,12 +1014,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564300a4548aba2428674d81bbc81df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 0}
-  audioClip: {fileID: 0}
+  source: {fileID: 4367811986963061650}
+  audioClip: {fileID: 8300000, guid: 615a865a8a6fbc64b9fa6fcd339b357f, type: 3}
   thisAbilityState: 4
   isPermitted: 1
   wallJumpActionRef: {fileID: -7602849884481592265, guid: 4ee20fbca81b7c24cbf8ca8052c9594b, type: 3}
-  wallJumpForce: {x: 13, y: 12}
+  wallJumpForce: {x: 14, y: 18}
   wallMaxJumpTime: 0.4
 --- !u!114 &8792523472032748407
 MonoBehaviour:
